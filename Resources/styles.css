@@ -9,7 +9,7 @@ nav{
 
 }
 header {
-    background-image: url("images/Jellyfishbanner.jpeg")
+    background-image: url("images/Jellyfishbanner.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
