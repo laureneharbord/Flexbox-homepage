@@ -3,23 +3,32 @@ body{
 }
 h1 {
     font-size: 4rem;
-    font-weight: 300;
+    font-weight: 700;
     color: white;
     text-align: center;
     font-family: 'Playfair display', serif;
+    margin: auto;
+    text-align: center;
+
 }
 h2 {
     font-size: 3.5rem;
-    font-weight: 200;
+    font-weight: 300;
     color: #3465ea;
     text-align: center;
     margin-top: 40px;
-    font-family: 'Playfair display', serif;
+    letter-spacing: 0.2em;
+    border-bottom: 1px,  #3465ea;
+
 }
-#heading {
-    margin: auto;
-    text-align: center;
+article {
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 0.15;
 }
+
 nav{
     z-index: 4;
     background-color: lavender;
@@ -49,14 +58,12 @@ nav{
 }
 header {
     background-image: url("images/Jellyfishbanner.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    min-height: 500px; 
-    display: flex;
+    padding: 4rem 2rem;
+    display: grid;
     align-items: center;
-    z-index: 2;
-
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    height: 500px;
 }
 
 .projects {
