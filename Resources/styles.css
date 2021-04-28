@@ -66,53 +66,63 @@ header {
     height: 500px;
 }
 
-.projects {
-    display: grid;
-    grid-template-columns: 2fr, 1fr;
-    grid-gap: 1rem;
+/* Projects section */
 
-}
-.case {    
-    width: 300px;
-    min-height: 300px;
-    display: flex;
-    align-items: flex-end;
+.projects {
     font-size: 2rem;
     color: whitesmoke;
-    text-align: center;
     font-weight: 100;
+    text-transform: uppercase;
+    margin: auto;
+    position: relative;
+    align-content: bottom;
 
 }
+#row1 {
+    display: flex;
+    height: 300px;
+    margin: auto;
+    justify-content: center;
+  
+    
+}
+#row2 {
+    display: flex;
+    height: 300px;
+    margin: auto;
+    justify-content: center;
+}
+
  #turtle {
     background-image: url("../Resources/images/Turtle.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
     flex-grow: 1;
+
+
 }
 
 #cleanbeach {
-    background-image: url("../Resources/images/cleanbeach.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url("../Resources/cleanbeach2.jpeg");
     background-size: cover;
-    flex-grow: 5;
+    margin: 10px;
+    flex-grow: 2;
 }
 
 #bacteria {
     background-image: url("../Resources/images/bacteria.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    flex-grow: 5;
+    margin: 10px;
+    flex-grow: 2;
 }
 
 #education {
-    background-image: url("../Resources/images/education.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url("../Resources/children.jpeg");
     background-size: cover;
+    margin: 10px;
     flex-grow: 1;
+  
 }
 .team {
 
@@ -122,5 +132,14 @@ header {
 } 
 footer {
 
+}
+
+@ media only screen and (max-width: 992px) {
+    #title, a {
+        font-size: 0.75rem;
+    }
+    #row1 {
+        flex-direction: column;
+    }
 }
 
