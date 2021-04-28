@@ -70,6 +70,30 @@ header {
     background-size: cover;
     flex-grow: 1;
 }
+
+#cleanbeach {
+    background-image: url("../Resources/images/cleanbeach.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 5;
+}
+
+#bacteria {
+    background-image: url("../Resources/images/bacteria.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 5;
+}
+
+#education {
+    background-image: url("../Resources/images/education.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+}
 .team {
 
 }
