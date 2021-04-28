@@ -5,7 +5,7 @@ h1 {
     font-size: 4rem;
     font-weight: 300;
     color: white;
-    position: relative;
+    text-align: center;
 }
 nav{
     z-index: 4;
@@ -16,18 +16,22 @@ nav{
     position: fixed;
 
 }
+#title {
+    float: left;
+    text-justify: center;
+    padding: 20px;
+    font-size: 2rem;
+}
 #navbar {
-    display: flex;
+   
 }
 
 #navbar a {
     float: right;
-    display: block;
     color: #242020;
     text-align: center;
-    padding: 14px;
+    padding: 40px;
     text-decoration: none;
-    align-items: center;
 }
 header {
     background-image: url("images/Jellyfishbanner.jpeg");
@@ -40,10 +44,7 @@ header {
     z-index: 2;
 
 }
-#heading {
-    align-items: center;
-    flex-shrink: inherit;
-}
+
 .projects {
 
 }
