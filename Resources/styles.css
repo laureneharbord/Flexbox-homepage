@@ -6,6 +6,7 @@ h1 {
     font-weight: 300;
     color: white;
     text-align: center;
+    font-family: 'Playfair display', serif;
 }
 h2 {
     font-size: 3.5rem;
@@ -13,6 +14,11 @@ h2 {
     color: #3465ea;
     text-align: center;
     margin-top: 40px;
+    font-family: 'Playfair display', serif;
+}
+#heading {
+    margin: auto;
+    text-align: center;
 }
 nav{
     z-index: 4;
@@ -28,9 +34,10 @@ nav{
     text-justify: center;
     padding: 20px;
     font-size: 2rem;
+    flex-shrink: 2;
 }
 #navbar {
-   
+    display: flex;
 }
 
 #navbar a {
@@ -62,6 +69,11 @@ header {
     min-height: 300px;
     display: flex;
     align-items: flex-end;
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 100;
+
 }
  #turtle {
     background-image: url("../Resources/images/Turtle.jpg");
