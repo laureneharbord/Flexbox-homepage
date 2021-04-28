@@ -7,6 +7,12 @@ h1 {
     color: white;
     text-align: center;
 }
+h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
 nav{
     z-index: 4;
     background-color: lavender;
@@ -46,7 +52,9 @@ header {
 }
 
 .projects {
-
+    background-color: #0202f6;
+    width: 100%;
+    height: 600px;
 }
 .team {
 
