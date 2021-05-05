@@ -1,5 +1,9 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: 'Prompt', sans-serif;
+    
 }
 h1 {
     font-size: 4rem;
@@ -18,7 +22,6 @@ h2 {
     text-align: center;
     margin-top: 40px;
     letter-spacing: 0.2em;
-    border-bottom: 1px,  #3465ea;
 
 }
 article {
@@ -34,27 +37,28 @@ nav{
     background-color: lavender;
     opacity: 0.7;
     width: 100%;
-    height: 80px;
+    min-height: 60px;
+    max-height: 60px;
     position: fixed;
+    
 
 }
+
 #title {
-    float: left;
-    text-justify: center;
-    padding: 20px;
-    font-size: 2rem;
-    flex-shrink: 2;
+    visibility: hidden;
 }
-#navbar {
-    display: flex;
-}
+
 
 #navbar a {
     float: right;
     color: #242020;
-    text-align: center;
-    padding: 40px;
     text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 38px;
+    position: relative;
+    bottom: 0px; 
+   
 }
 header {
     background-image: url("images/Jellyfishbanner.jpeg");
@@ -63,83 +67,178 @@ header {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    height: 500px;
+    min-height: 500px;
+}
+.subheading {
+    border-bottom: 1px solid #3465ea;
+    border-top: 1px solid #3465ea;
+    margin-top: 30px;
+}
+.description {
+    background-color:  #3465ea;
+    opacity: 0.7;
+    color: white;
+    width: 100%;
+    padding-left: 10%;
+    min-height: 30%; 
 }
 
 /* Projects section */
 
+
 .projects {
-    font-size: 2rem;
-    color: whitesmoke;
-    font-weight: 100;
-    text-transform: uppercase;
-    margin: auto;
-    position: relative;
-    align-content: bottom;
-
-}
-#row1 {
     display: flex;
-    height: 300px;
-    margin: auto;
+    align-items: center;
     justify-content: center;
+    min-height: 100%;
+    margin: 0 auto;
+  }
   
+  .grid {
+    min-width: 500px;
+    min-height: 1000px;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .img {
+    min-height: 50%;
+    margin: 10px;
+   display: flex;
+   align-items: flex-end;
+  }
+  
+  .turtle{
+    background: url(../Resources/images/Turtle.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
     
-}
-#row2 {
-    display: flex;
-    height: 300px;
-    margin: auto;
-    justify-content: center;
-}
-
- #turtle {
-    background-image: url("../Resources/images/Turtle.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 10px;
-    flex-grow: 1;
-
-
-}
-
-#cleanbeach {
-    background-image: url("../Resources/cleanbeach2.jpeg");
-    background-size: cover;
-    margin: 10px;
-    flex-grow: 2;
-}
-
-#bacteria {
-    background-image: url("../Resources/images/bacteria.jpeg");
-    background-size: cover;
-    margin: 10px;
-    flex-grow: 2;
-}
-
-#education {
-    background-image: url("../Resources/children.jpeg");
-    background-size: cover;
-    margin: 10px;
-    flex-grow: 1;
+  }
   
-}
+  .cleanbeach{
+    background: url(../Resources/cleanbeach2.jpeg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .bacteria{
+    background: url(../Resources/images/bacteria.jpeg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    
+  }
+  
+  .education{
+    background: url(../Resources/images/education.jpeg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    
+  }
+
+
+/* team section */
+
 .team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    position: center;
+    
 
 }
-.contact {
 
+h3 ,
+h4 {
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.teammate{
+        min-width: 350px;
+        min-height: 500px;
+        display: flex;
+        align-items: flex-end;
+        margin: 12px;
+     
+}
+.caitrin {
+    background: url(../Resources/Caitrin.jpeg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+
+}
+.marcel {
+    background: url(../Resources/Marcel.jpeg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+}
+.franco {
+    background: url(../Resources/Franco.jpeg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+}
+.molly {
+    background: url(../Resources/molly.jpeg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+}
+/* Contact section */ 
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 } 
+#address {
+    width: 280px;
+    padding-right: 40px;
+    margin: 20px 0;
+    flex-grow: 1;
+    margin-left: 100px;
+    font-family: 'Playfair display', serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+#map {
+    width: 280px;
+    min-height: auto;
+    flex-grow: 2;
+}
 footer {
 
 }
 
-@ media only screen and (max-width: 992px) {
-    #title, a {
-        font-size: 0.75rem;
+@media screen and (min-width: 800px) {
+    .grid{
+      min-height: 600px; 
     }
-    #row1 {
-        flex-direction: column;
+    
+    .img{
+      min-height: 50%;  
+    }
+    
+    .turtle,
+    .education {
+      width: 30%;
+    }
+  
+    .cleanbeach,
+    .bacteria {
+      width: 65%;
+    }
+    .teammate {
+        width: 40%;
+    }
+    #title {
+        visibility: visible;
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 0px
     }
 }
+
 
